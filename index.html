@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calasanz San Eduardo La Romana</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <nav>
+
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <img
+        src=data:image/png;base64,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
+        width="30" height="30">
+      <span class="logo navLogo"><a href="#">Calasanz San Eduardo</a></span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">Calasanz San Eduardo</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Tecnicos</a></li>
+          <li><a href="#">Calificaciones</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+            <i class='bx bx-x cancel'></i>
+            <i class='bx bx-search search'></i>
+          </div>
+
+          <div class="search-field">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+
+    const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "dark-mode") {
+      body.classList.add("dark");
+    }
+
+    // js code to toggle dark and light mode
+    modeToggle.addEventListener("click", () => {
+      modeToggle.classList.toggle("active");
+      body.classList.toggle("dark");
+
+      // js code to keep user selected mode even page refresh or file reopen
+      if (!body.classList.contains("dark")) {
+        localStorage.setItem("mode", "light-mode");
+      } else {
+        localStorage.setItem("mode", "dark-mode");
+      }
+    });
+
+    // js code to toggle search box
+    searchToggle.addEventListener("click", () => {
+      searchToggle.classList.toggle("active");
+    });
+
+
+    //   js code to toggle sidebar
+    sidebarOpen.addEventListener("click", () => {
+      nav.classList.add("active");
+    });
+
+    body.addEventListener("click", e => {
+      let clickedElm = e.target;
+
+      if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+        nav.classList.remove("active");
+      }
+    });
+
+  </script>
+
+  <div class="container-bar">
+    <input type="checkbox" id="btn-social">
+    <label for="btn-social" class="fa fa-play"></label>
+    <div class="icon-social">
+      <a href="https://www.facebook.com/pclaromana" class="fa fa-facebook">
+        <span id="title">Facebook</span>
+      </a>
+      <a href="https://www.youtube.com/@politecnicocalasanzlaroman6692" class="fa fa-youtube">
+        <span id="title">Youtube</span>
+      </a>
+      <a href="https://www.instagram.com/liceocalasanzr/" class="fa fa-instagram">
+        <span id="title">Intagram</span>
+      </a>
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/PM60XecG6zs"></iframe>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/oy37_ZfK1jE"></iframe>
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/cJcx3favqjI"></iframe>
+  </center>
+  <br>
+  <br>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src=https://momentodeportivord.com/wp-content/uploads/2022/05/Screenshot_20220525-152543_Instagram-1.jpg
+        style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src=https://www.diariohispaniola.com/fotos/1/Partedelosjvenesqueparticiparonenlaactividad_thumb_620.jpg
+        style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img
+        src=https://coedupia.com/wp-content/uploads/2019/11/39811137_2233951700224392_2955722958972125184_n-960x675.jpg
+        style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src=https://i0.wp.com/serie26.com/wp-content/uploads/2022/04/politecnico-calasanz-campeones.jpg
+        style="width:100%">
+      <div class="text"></div>
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <style type="text/css">
+    .nav {
+      position: relative;
+      z-index: 1000;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 700px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a  background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: rgb(112, 106, 106);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #3075dd;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }   
+  </script>
+  <script>
+    function commentBox() {
+      var name = document.getElementById('name').value;
+      var comment = document.getElementById('comment').value;
+
+      if (name == "" || comment == "") {
+        alert("Porfavor introduce la informacion requerida!");
+      } else {
+        var parent = document.createElement('div');
+        var el_name = document.createElement('h5');
+        var el_message = document.createElement('p');
+        var el_line = document.createElement('hr');
+        var txt_name = document.createTextNode(name);
+        var txt_message = document.createTextNode(comment);
+        el_name.appendChild(txt_name);
+        el_message.appendChild(txt_message);
+        el_line.style.border = '1px solid #000';
+        parent.appendChild(el_name);
+        parent.appendChild(el_line);
+        parent.appendChild(el_message);
+        parent.setAttribute('class', 'pane');
+        document.getElementById('result').appendChild(parent);
+
+        document.getElementById('name').value = "";
+        document.getElementById('comment').value = "";
+      }
+
+    }
+  </script>
+  </div>
+  <br>
+  <div class="container">
+
+    <div class="card">
+      <h2>
+        <font color="red">Misión</font>
+      </h2>
+      <p>
+        <font color="gray">Las escuelas pías , educan y evangelizan en la romana por medio de un proyecto de educación
+          religiosa,
+          humanística y científica. Ofrecen una propuesta educativa integral
+          [piedad y letras] a las familias que confían en la institución. El proceso formativo de los alumnos, se
+          centran
+          el desarrollo de las competencias: intelectual, espiritual y social. El ideario del
+          centro incluye el carisma de San José de Calasanz, los valores del evangelio y de la iglesia católica así como
+          la declaración universal de los derechos humanos.</font>
+      </p>
+
+    </div>
+
+    <div class="card">
+      <h2>
+        <font color="red">Misión</font>
+      </h2>
+      <p>
+        <font color="gray">Progresar como comunidad que "educa evangelizando y evangelizan educando",
+          y que las aulas sean espacios innovados y mejorados para el crecimiento integral de los alumnos.</font>
+      </p>
+
+    </div>
+
+    <div class="card">
+      <h2>
+        <font color="red">Misión</font>
+      </h2>
+
+      <p>
+        <font color="gray">•Carácter católico [orden de las escuelas pías].
+          •Responsabilidad profesional docente.
+          •Amor paciente hacia los alumnos.
+          •Acompañamiento de los alumnos/as.
+          •"Solidaridad antes las necesidades.”</font>
+      </p>
+
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <center>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.275035003568!2d-68.9881646498277!3d18.425817387402766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf54163a7bb6fb%3A0x3062874f9a00a5b9!2sColegio%20Catolico%20T%C3%A9cnico%20Calasanz%20San%20Eduardo%20RD!5e0!3m2!1ses-419!2sdo!4v1678073765754!5m2!1ses-419!2sdo"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
+  <br>
+  <center>
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=9709016fb628da25fdbc0601297144eea45a51b049f301d8352a6a08deeb3989%40group.calendar.google.com&ctz=America%2FSanto_Domingo"
+      style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </center>
+  <br>
+  <center>
+    <a href="https://analisis-fred-4tob.blogspot.com" class="btn-neon">
+      <span id="span1"></span>
+      <span id="span2"></span>
+      <span id="span3"></span>
+      <span id="span4"></span>
+      BLOG
+    </a>
+  </center>
+</body>
+
+</html>
